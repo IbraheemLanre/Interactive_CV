@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #fcc605;
+  --secondary-color: #67fec8;
+  --highlight-color: #678ffe;
+  --light-color: #fff;
+  --dark-color: #090908;
+  --mix-color: #bfc3cf;
+}
