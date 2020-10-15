@@ -10,4 +10,39 @@
   --light-color: #fff;
   --dark-color: #090908;
   --mix-color: #bfc3cf;
+  --font: "Ovo", serif;
+}
+
+body {
+  background: url("/assets/img/body-bg.png") no-repeat fixed center center/cover;
+  font-family: var(--font);
+}
+
+header {
+  padding: 2rem;
+}
+
+/* Hero-banner styling */
+.hero-banner {
+  padding-top: 2rem;
+  min-height: 85vh;
+  /* color: var(--dark-color); */
+}
+
+.hero-banner .site-title h3 {
+  text-transform: uppercase;
+}
+
+#subheading {
+  color: var(--highlight-color);
+}
+
+.social {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+  color: var(--highlight-color);
+}
+
+.social-link {
+  padding: 0.8rem;
 }
