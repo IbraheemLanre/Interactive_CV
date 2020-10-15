@@ -8,9 +8,16 @@
   --secondary-color: #67fec8;
   --highlight-color: #678ffe;
   --light-color: #fff;
+  --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   --dark-color: #090908;
-  --mix-color: #bfc3cf;
+  --mix-color: whitesmoke;
   --font: "Ovo", serif;
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,7 +33,7 @@ header {
 .hero-banner {
   padding-top: 2rem;
   min-height: 85vh;
-  /* color: var(--dark-color); */
+  color: var(--dark-color);
 }
 
 .hero-banner .site-title h3 {
@@ -44,5 +51,55 @@ header {
 }
 
 .social-link {
-  padding: 0.8rem;
+  padding-right: 2rem;
+}
+
+button a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+button a:hover {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.cv-btn {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: var(--mix-color);
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.cv-btn:hover {
+  background: var(--mix-color);
+  background-clip: padding-box;
+  color: var(--dark-color);
+}
+
+.hire-btn {
+  background: var(--mix-color);
+  background-clip: padding-box;
+  color: var(--dark-color);
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.hire-btn:hover {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: var(--light-color);
+}
+
+.hire-btn a {
+  color: var(--dark-color);
+}
+
+.hire-btn a:hover {
+  color: var(--light-color);
 }
