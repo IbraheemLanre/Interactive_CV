@@ -108,7 +108,13 @@ button a:hover {
 #experience {
   margin-top: 2rem;
 }
+
 #experience h3 {
   text-align: center;
   text-transform: uppercase;
+}
+
+#experience button {
+  display: flex;
+  justify-content: space-between;
 }
