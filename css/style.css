@@ -103,3 +103,12 @@ button a:hover {
 .hire-btn a:hover {
   color: var(--light-color);
 }
+
+/* Experience style */
+#experience {
+  margin-top: 2rem;
+}
+#experience h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
