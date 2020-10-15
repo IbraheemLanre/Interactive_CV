@@ -104,17 +104,17 @@ button a:hover {
   color: var(--light-color);
 }
 
-/* Experience style */
-#experience {
-  margin-top: 2rem;
+/* Experience & style */
+.base {
+  margin-top: 3rem;
 }
 
-#experience h3 {
+.base h3 {
   text-align: center;
   text-transform: uppercase;
 }
 
-#experience button {
+.base button {
   display: flex;
   justify-content: space-between;
 }
