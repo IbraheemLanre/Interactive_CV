@@ -85,9 +85,7 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" target="_blank" href="certificate.html"
-              >Certifications</a
-            >
+            <a class="nav-link" href="#certificate">Certifications</a>
           </li>
         </ul>
       </nav>
@@ -738,6 +736,38 @@
     </footer>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <script>
+      const images = [
+        "./assets/banner/1.svg",
+        "./assets/banner/2.svg",
+        "./assets/banner/3.svg",
+        "./assets/banner/4.svg",
+        "./assets/banner/5.svg",
+        "./assets/banner/6.svg",
+        "./assets/banner/7.svg",
+        "./assets/banner/8.svg",
+      ];
+      let i = 0;
+      const renew = setInterval(function () {
+        if (images.length == i) {
+          i = 0;
+        } else {
+          document.getElementById("banner-img").src = images[i];
+          i++;
+        }
+      }, 4000);
+    </script>
+
+    <script src="./dependencies/Typewriter/typewriter.min.js"></script>
+
+    <script>
+      var typewriter = new Typewriter("#subheading", {
+        strings: ["FULL STACK WEB DEVELOPMENT STUDENT (REACT AND NODE)"],
+        autoStart: true,
+        loop: true,
+      });
+    </script>
     <!-- Bootstrap bundle, including jQuery and proper.js-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
