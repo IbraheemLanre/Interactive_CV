@@ -142,9 +142,17 @@ button a:hover {
   height: auto;
 }
 
+/* Certificate Area */
+
+#certificate {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Footer Area */
 footer {
   text-align: center;
+  text-transform: uppercase;
 }
 
 footer .social {
