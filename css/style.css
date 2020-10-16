@@ -153,8 +153,27 @@ button a:hover {
 footer {
   text-align: center;
   text-transform: uppercase;
+  /* position: relative; */
 }
 
 footer .social {
   font-size: 3rem;
+}
+
+footer #topBtn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  background: var(--gradient-color);
+  opacity: 0.5;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+footer #topBtn span {
+  font-size: 2rem;
+  color: var(--light-color);
 }
