@@ -40,6 +40,14 @@ header {
   text-transform: uppercase;
 }
 
+.hero-banner #ibra {
+  display: inline-block;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: 5px;
+}
+
 #subheading {
   color: var(--highlight-color);
 }
@@ -104,7 +112,7 @@ button a:hover {
   color: var(--light-color);
 }
 
-/* Experience & style */
+/* Experience & Education Area style */
 .base {
   margin-top: 3rem;
 }
@@ -117,4 +125,19 @@ button a:hover {
 .base button {
   display: flex;
   justify-content: space-between;
+}
+
+/* Skills Area */
+
+.item {
+  background: var(--mix-color);
+  border-radius: 50%;
+  text-align: center;
+  /* width: 150px; */
+  box-shadow: var(--box-shadow);
+}
+
+.item img {
+  width: 150px;
+  height: auto;
 }
