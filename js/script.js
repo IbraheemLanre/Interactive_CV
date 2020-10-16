@@ -3,7 +3,6 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     autoplay: true,
-    dots: true,
     nav: true,
     responsive: {
       0: {
@@ -18,9 +17,10 @@ $(document).ready(function () {
     },
   });
 
-  //back to top feature
   const gotoTopBtn = document.querySelector("#topBtn");
   const width = window.matchMedia("(max-width: 576px");
+  const navBar = document.querySelector("header");
+  const sticky = navBar.offsetTop;
 
   // Display the button
   const showGotoTopBtn = () => {
@@ -43,4 +43,20 @@ $(document).ready(function () {
   };
 
   gotoTopBtn.addEventListener("click", backToTop);
+
+  // Activate each navbar tab on click
+  $("#myTab a").on("click", function () {
+    // e.preventDefault();
+    $(this).tab("show");
+  });
+
+  //Sticky navbar
+  const stickyMenu = () => {
+    if (window.pageYOffset >= sticky && !width.matches) {
+      navBar.classList.add("sticky");
+    } else {
+      navBar.classList.remove("sticky");
+    }
+  };
+  window.addEventListener("scroll", stickyMenu);
 });

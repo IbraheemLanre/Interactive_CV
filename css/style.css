@@ -27,10 +27,20 @@ body {
 
 header {
   padding: 2rem;
+  background: var(--light-color);
+  max-height: 85px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 100px;
+  z-index: 100;
+}
 /* Hero-banner styling */
 .hero-banner {
+  margin-top: 5rem;
   padding-top: 2rem;
   min-height: 85vh;
   color: var(--dark-color);
