@@ -141,3 +141,12 @@ button a:hover {
   width: 150px;
   height: auto;
 }
+
+/* Footer Area */
+footer {
+  text-align: center;
+}
+
+footer .social {
+  font-size: 3rem;
+}
